@@ -1,5 +1,5 @@
 import fs from 'fs';
-import imagekit from '../configs/imageKit.js';
+import imagekit from '../configs/imagekit.js';
 import Blog from '../models/Blog.js';
 import Comment from '../models/comment.js';
 import main from '../configs/gemini.js';
@@ -18,7 +18,7 @@ export const addBlog = async (req, res) => {
 
         const fileBuffer = fs.readFileSync(imageFile.path);
 
-        // uploade image to imagekit
+        // upload image to imagekit
         const response = await imagekit.upload({
             file: fileBuffer,
             fileName: imageFile.originalname,
@@ -30,7 +30,7 @@ export const addBlog = async (req, res) => {
             path: response.filePath,
             transformation: [
                 { quality : 'auto' }, // auto compression
-                { format : 'webp' }, // convert to mordern format
+                { format : 'webp' }, // convert to moden format
                 { width: '1280' } // resize to max width
             ]
         });
