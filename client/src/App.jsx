@@ -14,7 +14,7 @@ import NoStyleWrapper from './components/NoStyleWrapper'
 import Layout from "./pages/admin/Layout.jsx";
 import Dasboard from "./pages/admin/Dasboard.jsx";
 import AddBlog from "./pages/admin/AddBlog.jsx";
-import ListBlog from "./pages/admin/listBlog.jsx";
+import ListBlog from "./pages/admin/ListBlog.jsx";
 import Comments from "./pages/admin/Comments.jsx";
 import Login from "./components/admin/Login.jsx";
 import 'quill/dist/quill.snow.css';
