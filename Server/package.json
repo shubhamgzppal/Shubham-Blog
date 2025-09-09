@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "server": "npm server.js",
-    "start": "npm server.js"
+    "server": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
